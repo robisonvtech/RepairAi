@@ -5,7 +5,7 @@ import { STATUS_LABEL, STATUS_COLOR, formatBRL, formatOSNumber, type OrderStatus
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { UnifyMascot } from "@/components/UnifyMascot";
-import { usePlan } from "@/context/PlanContext";
+import { usePlan } from "@/hooks/usePlan";
 import { EliteDashboard } from "@/components/dashboards/EliteDashboard";
 import { ProDashboard } from "@/components/dashboards/ProDashboard";
 import { StartDashboard } from "@/components/dashboards/StartDashboard";
