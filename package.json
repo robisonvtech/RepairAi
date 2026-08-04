@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "workspaces": [
+    "unifysistem"
+  ],
+  "scripts": {
+    "build": "npm --prefix unifysistem run build",
+    "dev": "npm --prefix unifysistem run dev",
+    "preview": "npm --prefix unifysistem run preview",
+    "lint": "npm --prefix unifysistem run lint",
+    "format": "npm --prefix unifysistem run format"
+  }
+}
