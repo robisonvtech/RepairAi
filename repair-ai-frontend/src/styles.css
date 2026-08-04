@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+/* subtle circuit background for hero */
+.hero-circuit {
+  background-image: radial-gradient(rgba(255,0,0,0.02) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
