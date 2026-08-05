@@ -1,4 +1,4 @@
-import { _ as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { o as require_jsx_runtime } from "../_libs/@radix-ui/react-collection+[...].mjs";
 import { F as History, L as GraduationCap, T as Package, a as Users, i as Wallet, ot as BookOpen } from "../_libs/lucide-react.mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/more-7csH0AlF.js

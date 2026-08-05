@@ -1,7 +1,15 @@
-import { t as __exportAll } from "./vendor_react-CFh17dx8.mjs";
+import { n as __exportAll } from "../_runtime.mjs";
+import { t as __exportAll$1 } from "./rolldown-runtime-D7D4PA-g.mjs";
 import { n as buildSystemPrompt } from "./prompt-BZG73IfD.mjs";
 import { t as applyContextWindow } from "./memory-CkcAkHNh.mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/gateway.server-DwpX14po.js
+var gateway_server_DwpX14po_exports = /* @__PURE__ */ __exportAll({
+	a: () => gateway_server_exports,
+	i: () => gatewayTranscribe,
+	n: () => gatewaySpeech,
+	r: () => gatewayStream,
+	t: () => checkRateLimit
+});
 function num(value, fallback) {
 	const parsed = value === void 0 ? NaN : Number(value);
 	return Number.isFinite(parsed) ? parsed : fallback;
@@ -754,7 +762,7 @@ function usageFromResponse(res) {
 * Handles: provider selection, automatic retry, fallback provider, timeout,
 * rate-limit detection, response caching, context window/memory and analytics.
 */
-var gateway_server_exports = /* @__PURE__ */ __exportAll({
+var gateway_server_exports = /* @__PURE__ */ __exportAll$1({
 	checkRateLimit: () => checkRateLimit,
 	gatewayChat: () => gatewayChat,
 	gatewaySpeech: () => gatewaySpeech,
@@ -978,4 +986,4 @@ async function gatewaySpeech(text, opts = {}) {
 	return provider.speech({ text });
 }
 //#endregion
-export { gateway_server_exports as a, gatewayTranscribe as i, gatewaySpeech as n, gatewayStream as r, checkRateLimit as t };
+export { gateway_server_DwpX14po_exports as a, gatewayTranscribe as i, gatewaySpeech as n, gatewayStream as r, checkRateLimit as t };

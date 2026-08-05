@@ -53,7 +53,7 @@ function renderErrorPage() {
 }
 var serverEntryPromise;
 async function getServerEntry() {
-	if (!serverEntryPromise) serverEntryPromise = import("./vendor_react-CFh17dx8.mjs").then((n) => n.n).then((m) => m.default ?? m);
+	if (!serverEntryPromise) serverEntryPromise = import("./vendor_react-BJM4b7Sa.mjs").then((n) => n.n).then((m) => m.default ?? m);
 	return serverEntryPromise;
 }
 async function normalizeCatastrophicSsrResponse(response) {
