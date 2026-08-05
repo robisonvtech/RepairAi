@@ -11,4 +11,4 @@ npm run build
 npm run preview
 ```
 
-Vercel: `vercel.json` sets `outputDirectory` to `dist`.
+Vercel: Build output is generated into `.vercel/output` by the Nitro/Vite build (compatible with Vercel Build Output API).

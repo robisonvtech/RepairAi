@@ -12,4 +12,26 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    // Prefer native tsconfig path resolution when possible
+    resolve: {
+      tsconfigPaths: true,
+    },
+    build: {
+      // reduce main bundle and enable code-splitting guidance
+      chunkSizeWarningLimit: 2000,
+      rollupOptions: {
+        output: {
+          manualChunks(id: string) {
+            if (id.includes('node_modules')) {
+              if (id.includes('react')) return 'vendor_react'
+              if (id.includes('@tanstack')) return 'vendor_tanstack'
+              if (id.includes('lucide-react')) return 'vendor_icons'
+              return 'vendor_misc'
+            }
+          }
+        }
+      }
+    }
+  }
 });

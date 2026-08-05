@@ -1,7 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 
 export const getTracking = createServerFn({ method: "GET" })
-  .inputValidator((d: unknown) => {
+  .validator((d: unknown) => {
     const t = (d as { token?: string })?.token;
     if (!t || typeof t !== "string" || t.length < 8 || t.length > 128) throw new Error("Token inválido.");
     return { token: t };

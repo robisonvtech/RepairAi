@@ -24,7 +24,7 @@ interface ChatInput {
  */
 export const sendChat = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
-  .inputValidator((input: unknown) => {
+  .validator((input: unknown) => {
     const d = input as ChatInput;
     if (!d || !Array.isArray(d.messages)) throw new Error("Requisição inválida.");
     if (d.messages.length === 0 || d.messages.length > 80) throw new Error("Conversa muito longa.");
